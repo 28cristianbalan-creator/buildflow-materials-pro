@@ -1,0 +1,111 @@
+{
+  "header": {
+    "brand": "BuildFlow",
+    "nav": {
+      "home": "Acasă",
+      "products": "Produse",
+      "about": "Despre",
+      "contact": "Contact"
+    },
+    "cta": {
+      "getQuote": "Cere ofertă"
+    },
+    "phone": "+1 (555) 123-4567"
+  },
+  "hero": {
+    "alt": "Depozit profesional de materiale de construcții",
+    "title": {
+      "line1": "Materiale de construcții",
+      "line2": "Premium"
+    },
+    "description": "Cărămizi de calitate, blocuri BCA și materiale de construcții livrate pe șantier. Construim încredere, proiect cu proiect.",
+    "buttons": {
+      "viewProducts": "Vezi produse",
+      "getQuote": "Cere ofertă"
+    },
+    "trust": {
+      "quality": "Calitate premium",
+      "delivery": "Livrare rapidă",
+      "supplier": "Furnizor de încredere"
+    }
+  },
+  "categories": {
+    "heading": "Gama noastră de produse",
+    "subheading": "Materiale premium de construcții de la producători de încredere, livrate cu excelență și fiabilitate.",
+    "items": {
+      "clayBricks": {
+        "title": "Cărămizi de lut",
+        "description": "Cărămizi roșii de calitate superioară pentru toate nevoile de construcție. Durabile, rezistente la intemperii și disponibile în diverse dimensiuni.",
+        "features": ["Rezistență ridicată", "Rezistente la intemperii", "Dimensiuni standard"],
+        "price": "De la $0.45/cărămidă",
+        "alt": "Cărămizi roșii pentru construcții"
+      },
+      "bcaBlocks": {
+        "title": "Blocuri BCA",
+        "description": "Blocuri din beton celular autoclavizat, ușoare și eficiente energetic. Ușor de prelucrat, cu proprietăți excelente de izolare.",
+        "features": ["Greutate redusă", "Izolație termică", "Montaj ușor"],
+        "price": "De la $12.50/m²",
+        "alt": "Blocuri BCA albe pentru zidărie"
+      },
+      "aggregates": {
+        "title": "Agregate",
+        "description": "Agregate de construcții de înaltă calitate, inclusiv nisip, pietriș și piatră spartă. Perfecte pentru beton și fundații.",
+        "features": ["Grade variate", "Curate și testate", "Disponibile la vrac"],
+        "price": "De la $35/tonă",
+        "alt": "Agregate: nisip, pietriș și piatră spartă"
+      }
+    }
+  },
+  "productsSection": {
+    "heading": "Produse",
+    "stock": {
+      "in": "În stoc",
+      "low": "Stoc limitat",
+      "out": "Stoc epuizat"
+    },
+    "viewDetails": "Detalii"
+  },
+  "trust": {
+    "heading": "De ce să alegi BuildFlow?",
+    "text": "Servim industria construcțiilor cu excelență, livrând materiale de calitate și servicii excepționale.",
+    "stats": {
+      "years": "Ani de experiență",
+      "projects": "Proiecte livrate",
+      "quality": "Rată de calitate",
+      "clients": "Clienți fericiți"
+    },
+    "cta": {
+      "title": "Pregătit să începi proiectul?",
+      "text": "Primește consultanță și materiale premium pentru nevoile tale. Echipa noastră este gata să te ajute.",
+      "freeQuote": "Cere ofertă gratuită",
+      "callNow": "Sună acum: {{phone}}"
+    }
+  },
+  "footer": {
+    "blurb": "Partenerul tău de încredere pentru materiale de construcții premium. Calitate, fiabilitate și servicii excelente din 2008.",
+    "products": "Produsele noastre",
+    "services": "Servicii",
+    "contact": "Contactează-ne",
+    "list": {
+      "clay": "Cărămizi de lut",
+      "bca": "Blocuri BCA",
+      "aggregates": "Agregate",
+      "concreteBlocks": "Blocuri de beton",
+      "sand": "Nisip pentru construcții",
+      "supply": "Furnizare materiale",
+      "bulk": "Comenzi en-gros",
+      "delivery": "Livrare pe șantier",
+      "consulting": "Consultanță de proiect",
+      "testing": "Testare calitate"
+    },
+    "address": {
+      "line1": "Str. Industrială 123",
+      "line2": "Cartierul Construcții, CD 12345"
+    },
+    "hours": {
+      "monFri": "Lun-Vin: 7:00 - 18:00",
+      "sat": "Sâm: 8:00 - 16:00"
+    },
+    "copyright": "© 2024 BuildFlow. Toate drepturile rezervate. Construim cu calitate și precizie."
+  }
+}
