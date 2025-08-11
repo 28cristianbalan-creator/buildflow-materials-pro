@@ -19,11 +19,11 @@ const ProductsSection = () => {
   const stockLabel = (stock: number) => {
     if (stock <= 0) return { label: t('productsSection.stock.out'), tone: 'destructive' as const };
     if (stock < 10) return { label: t('productsSection.stock.low'), tone: 'secondary' as const };
-    return { label: t('productsSection.stock.in'), tone: 'primary' as const };
+    return { label: t('productsSection.stock.in'), tone: 'default' as const };
   };
 
   return (
-    <section className="py-20 bg-gradient-section" aria-labelledby="products-heading">
+    <section id="products" className="py-20 bg-gradient-section" aria-labelledby="products-heading">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 animate-fade-in">
           <h2 id="products-heading" className="text-4xl md:text-5xl font-bold text-foreground mb-4">{t('productsSection.heading')}</h2>
