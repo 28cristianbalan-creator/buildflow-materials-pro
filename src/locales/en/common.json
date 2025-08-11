@@ -1,0 +1,111 @@
+{
+  "header": {
+    "brand": "BuildFlow",
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": {
+      "getQuote": "Get Quote"
+    },
+    "phone": "+1 (555) 123-4567"
+  },
+  "hero": {
+    "alt": "Professional construction materials warehouse",
+    "title": {
+      "line1": "Premium",
+      "line2": "Construction Materials"
+    },
+    "description": "Quality bricks, BCA blocks, and construction materials delivered to your site. Building trust, project by project.",
+    "buttons": {
+      "viewProducts": "View Products",
+      "getQuote": "Get Quote"
+    },
+    "trust": {
+      "quality": "Premium Quality",
+      "delivery": "Fast Delivery",
+      "supplier": "Trusted Supplier"
+    }
+  },
+  "categories": {
+    "heading": "Our Product Range",
+    "subheading": "Premium construction materials from trusted manufacturers, delivered with excellence and reliability.",
+    "items": {
+      "clayBricks": {
+        "title": "Clay Bricks",
+        "description": "Premium red clay bricks for all construction needs. Durable, weather-resistant, and available in various sizes.",
+        "features": ["High Strength", "Weather Resistant", "Standard Sizes"],
+        "price": "From $0.45/brick",
+        "alt": "Red bricks for construction"
+      },
+      "bcaBlocks": {
+        "title": "BCA Blocks",
+        "description": "Lightweight autoclaved cellular concrete blocks, energy-efficient and easy to work with. Excellent insulation properties.",
+        "features": ["Lightweight", "Thermal Insulation", "Easy Installation"],
+        "price": "From $12.50/m²",
+        "alt": "White BCA blocks for masonry"
+      },
+      "aggregates": {
+        "title": "Aggregates",
+        "description": "High-quality construction aggregates including sand, gravel, and crushed stone. Perfect for concrete and foundations.",
+        "features": ["Various Grades", "Clean & Tested", "Bulk Available"],
+        "price": "From $35/ton",
+        "alt": "Aggregates: sand, gravel and crushed stone"
+      }
+    }
+  },
+  "productsSection": {
+    "heading": "Products",
+    "stock": {
+      "in": "In Stock",
+      "low": "Low Stock",
+      "out": "Out of Stock"
+    },
+    "viewDetails": "View Details"
+  },
+  "trust": {
+    "heading": "Why Choose BuildFlow?",
+    "text": "We've been serving the construction industry with excellence, delivering quality materials and exceptional service.",
+    "stats": {
+      "years": "Years of Experience",
+      "projects": "Projects Delivered",
+      "quality": "Quality Rating",
+      "clients": "Happy Clients"
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "text": "Get expert consultation and premium materials for your needs. Our team is ready to help.",
+      "freeQuote": "Free Quote",
+      "callNow": "Call Now: {{phone}}"
+    }
+  },
+  "footer": {
+    "blurb": "Your trusted partner for premium construction materials. Quality, reliability, and excellent service since 2008.",
+    "products": "Our Products",
+    "services": "Services",
+    "contact": "Contact Us",
+    "list": {
+      "clay": "Clay Bricks",
+      "bca": "BCA Blocks",
+      "aggregates": "Aggregates",
+      "concreteBlocks": "Concrete Blocks",
+      "sand": "Construction Sand",
+      "supply": "Material Supply",
+      "bulk": "Bulk Orders",
+      "delivery": "Site Delivery",
+      "consulting": "Project Consulting",
+      "testing": "Quality Testing"
+    },
+    "address": {
+      "line1": "123 Industrial Avenue",
+      "line2": "Construction District, CD 12345"
+    },
+    "hours": {
+      "monFri": "Mon-Fri: 7:00 AM - 6:00 PM",
+      "sat": "Sat: 8:00 AM - 4:00 PM"
+    },
+    "copyright": "© 2024 BuildFlow. All rights reserved. Building with quality and precision."
+  }
+}
