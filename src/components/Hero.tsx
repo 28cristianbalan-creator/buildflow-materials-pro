@@ -1,15 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 import heroImage from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Professional construction materials warehouse" 
+          alt={t('hero.alt')} 
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
@@ -20,23 +23,22 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Premium Construction
-              <span className="block text-primary">Materials</span>
+              {t('hero.title.line1')}
+              <span className="block text-primary">{t('hero.title.line2')}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Quality bricks, BCA blocks, and construction materials delivered to your site. 
-              Building trust, one project at a time.
+              {t('hero.description')}
             </p>
           </div>
 
           <div className="animate-slide-up">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                View Products
+                {t('hero.buttons.viewProducts')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 text-white border-white/30 hover:bg-white/20">
-                Get Quote
+                {t('hero.buttons.getQuote')}
               </Button>
             </div>
 
@@ -44,15 +46,15 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center items-center gap-6 text-white/80">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span>Premium Quality</span>
+                <span>{t('hero.trust.quality')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span>Fast Delivery</span>
+                <span>{t('hero.trust.delivery')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span>Trusted Supplier</span>
+                <span>{t('hero.trust.supplier')}</span>
               </div>
             </div>
           </div>

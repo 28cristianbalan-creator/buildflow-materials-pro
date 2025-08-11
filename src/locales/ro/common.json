@@ -13,20 +13,20 @@
     "phone": "+1 (555) 123-4567"
   },
   "hero": {
-    "alt": "Depozit profesional de materiale de construcții",
+    "alt": "Magazin profesional de materiale de construcții",
     "title": {
-      "line1": "Materiale de construcții",
+      "line1": "Materiale de Construcții",
       "line2": "Premium"
     },
-    "description": "Cărămizi de calitate, blocuri BCA și materiale de construcții livrate pe șantier. Construim încredere, proiect cu proiect.",
+    "description": "Cărămizi de calitate, blocuri BCA și materiale de construcții livrate direct la șantier. Construim încredere, proiect cu proiect.",
     "buttons": {
-      "viewProducts": "Vezi produse",
-      "getQuote": "Cere ofertă"
+      "viewProducts": "Vezi Produsele",
+      "getQuote": "Solicită Ofertă"
     },
     "trust": {
-      "quality": "Calitate premium",
-      "delivery": "Livrare rapidă",
-      "supplier": "Furnizor de încredere"
+      "quality": "Calitate Premium",
+      "delivery": "Livrare Rapidă",
+      "supplier": "Furnizor de Încredere"
     }
   },
   "categories": {
