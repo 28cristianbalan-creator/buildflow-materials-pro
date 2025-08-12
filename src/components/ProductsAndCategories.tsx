@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getProductsByCategory } from '@/data/products';
 import { categories } from '@/data/categories';
 import { useTranslation } from 'react-i18next';
@@ -6,14 +7,16 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowRight, Package, Star } from 'lucide-react';
+import { getProductImage } from '@/lib/product-images';
 
-// Import product images
+// Import category images
 import redBricksImage from "@/assets/red-bricks.jpg";
 import bcaBlocksImage from "@/assets/bca-blocks.jpg";
 import aggregatesImage from "@/assets/aggregates.jpg";
 
 const ProductsAndCategories = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(categories[0].key);
 
   // Map category images
@@ -144,11 +147,16 @@ const ProductsAndCategories = () => {
                     className="bg-card rounded-xl shadow-soft hover:shadow-medium transition-all duration-500 overflow-hidden group animate-slide-up hover-scale" 
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    {/* Product Image Placeholder */}
-                    <div className="relative h-48 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                      <Package className="w-16 h-16 text-primary/40" />
+                    {/* Product Image */}
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={getProductImage(product.image)} 
+                        alt={t(product.translationKey + '.name')}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
                       {product.featured && (
-                        <div className="absolute top-3 left-3 bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
+                        <div className="absolute top-3 left-3 bg-gradient-to-r from-primary to-primary-glow text-primary-foreground px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                          <Star className="w-3 h-3" />
                           RECOMANDAT
                         </div>
                       )}
@@ -162,9 +170,14 @@ const ProductsAndCategories = () => {
                     <div className="p-6">
                       <div className="mb-4">
                         <h4 className="text-lg font-semibold text-card-foreground mb-2 group-hover:text-primary transition-colors">
-                          {product.name}
+                          {t(product.translationKey + '.name')}
                         </h4>
-                        <p className="text-xl font-bold text-primary">{product.price}</p>
+                        <p className="text-xl font-bold text-primary">{t(product.priceKey)}</p>
+                        {product.description && (
+                          <p className="text-sm text-muted-foreground mt-2 line-clamp-2">
+                            {t(product.description)}
+                          </p>
+                        )}
                       </div>
                       
                       {product.stock > 0 && (
@@ -188,7 +201,12 @@ const ProductsAndCategories = () => {
 
             {/* View All Products Button */}
             <div className="text-center mt-12 animate-fade-in">
-              <Button variant="hero" size="lg" className="hover-scale">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="hover-scale"
+                onClick={() => navigate('/produse')}
+              >
                 Vezi Toate Produsele
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

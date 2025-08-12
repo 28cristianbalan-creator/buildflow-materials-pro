@@ -1,50 +1,45 @@
 import { Shield, Truck, Award, Users } from "lucide-react";
+import { useTranslation } from 'react-i18next';
+import { Button } from '@/components/ui/button';
 
 const TrustSection = () => {
+  const { t } = useTranslation();
+
   const stats = [
     {
       icon: Shield,
-      value: "15+",
-      label: "Years Experience",
-      description: "Trusted construction material supplier"
+      statKey: 'years'
     },
     {
       icon: Truck,
-      value: "5000+",
-      label: "Projects Delivered",
-      description: "Successful project completions"
+      statKey: 'projects'
     },
     {
       icon: Award,
-      value: "99%",
-      label: "Quality Rating",
-      description: "Customer satisfaction guaranteed"
+      statKey: 'quality'
     },
     {
       icon: Users,
-      value: "1200+",
-      label: "Happy Clients",
-      description: "Building lasting relationships"
+      statKey: 'clients'
     }
   ];
 
   return (
-    <section className="py-20 bg-construction-slate text-white">
+    <section className="py-20 bg-construction-slate text-white" aria-labelledby="trust-heading">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Why Choose BuildFlow?
+          <h2 id="trust-heading" className="text-4xl md:text-5xl font-bold mb-6">
+            {t('trust.heading')}
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            We've been serving the construction industry with excellence, 
-            delivering quality materials and exceptional service.
+            {t('trust.text')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div 
-              key={index}
+              key={stat.statKey}
               className="text-center group animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -52,13 +47,13 @@ const TrustSection = () => {
                 <stat.icon className="w-8 h-8 text-primary" />
               </div>
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                {stat.value}
+                {t(`trust.stats.${stat.statKey}.value`)}
               </div>
               <div className="text-xl font-semibold mb-2">
-                {stat.label}
+                {t(`trust.stats.${stat.statKey}.label`)}
               </div>
               <p className="text-white/70 text-sm">
-                {stat.description}
+                {t(`trust.stats.${stat.statKey}.description`)}
               </p>
             </div>
           ))}
@@ -66,18 +61,25 @@ const TrustSection = () => {
 
         <div className="mt-16 text-center animate-fade-in">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+            <h3 className="text-2xl font-bold mb-4">{t('trust.cta.title')}</h3>
             <p className="text-white/80 mb-6">
-              Get expert advice and premium materials for your construction needs. 
-              Our team is ready to help you build something extraordinary.
+              {t('trust.cta.text')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:scale-105">
-                Get Free Quote
-              </button>
-              <button className="border border-white/30 hover:bg-white/10 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300">
-                Call Now: +1 (555) 123-4567
-              </button>
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="hover-scale"
+              >
+                {t('trust.cta.freeQuote')}
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-white/30 hover:bg-white/10 text-white hover:text-white transition-all duration-300"
+              >
+                {t('trust.cta.callNow')}: {t('header.phone')}
+              </Button>
             </div>
           </div>
         </div>

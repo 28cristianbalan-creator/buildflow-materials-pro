@@ -67,18 +67,102 @@
   },
   "trust": {
     "heading": "Why Choose BuildFlow?",
-    "text": "We've been serving the construction industry with excellence, delivering quality materials and exceptional service.",
+    "text": "We serve the construction industry with excellence, delivering quality materials and exceptional service.",
     "stats": {
-      "years": "Years of Experience",
-      "projects": "Projects Delivered",
-      "quality": "Quality Rating",
-      "clients": "Happy Clients"
+      "years": {
+        "value": "15+",
+        "label": "Years of Experience",
+        "description": "Trusted construction material supplier"
+      },
+      "projects": {
+        "value": "5000+",
+        "label": "Projects Delivered",
+        "description": "Successful project completions"
+      },
+      "quality": {
+        "value": "99%",
+        "label": "Quality Rating",
+        "description": "Customer satisfaction guaranteed"
+      },
+      "clients": {
+        "value": "1200+",
+        "label": "Happy Clients",
+        "description": "Building lasting relationships"
+      }
     },
     "cta": {
       "title": "Ready to Start Your Project?",
-      "text": "Get expert consultation and premium materials for your needs. Our team is ready to help.",
-      "freeQuote": "Free Quote",
-      "callNow": "Call Now: {{phone}}"
+      "text": "Get expert advice and premium materials for your construction needs. Our team is ready to help.",
+      "freeQuote": "Get Free Quote",
+      "callNow": "Call Now"
+    }
+  },
+  "products": {
+    "clayBricks": {
+      "redBrick240": {
+        "name": "Red Clay Brick 240x115x63",
+        "price": "$0.48/brick",
+        "description": "Standard red brick for construction, dimensions 240x115x63mm. Weather-resistant and durable."
+      },
+      "solidBrick": {
+        "name": "Solid Red Clay Brick",
+        "price": "$0.52/brick",
+        "description": "Solid red brick for heavy construction. Superior strength and exceptional durability."
+      },
+      "perforatedBrick": {
+        "name": "Perforated Clay Brick",
+        "price": "$0.45/brick",
+        "description": "Brick with holes for thermal insulation. Lightweight and energy efficient."
+      },
+      "fireBrick": {
+        "name": "Fire Clay Brick",
+        "price": "$0.55/brick",
+        "description": "Special brick for fireplaces and ovens. Resistant to high temperatures."
+      }
+    },
+    "bcaBlocks": {
+      "block200": {
+        "name": "BCA Block 600x250x200",
+        "price": "$13.20/m²",
+        "description": "Autoclaved cellular concrete block, 200mm thickness. Excellent thermal insulation."
+      },
+      "block150": {
+        "name": "BCA Block 600x250x150",
+        "price": "$12.80/m²",
+        "description": "BCA block for interior walls, 150mm thickness. Easy to process."
+      },
+      "adhesive": {
+        "name": "BCA Adhesive 25kg",
+        "price": "$7.50/bag",
+        "description": "Special adhesive for BCA blocks. Easy application and strong adhesion."
+      },
+      "block100": {
+        "name": "BCA Block 600x250x100",
+        "price": "$11.50/m²",
+        "description": "Thin BCA block for partitions. Reduced weight."
+      }
+    },
+    "aggregates": {
+      "washedSand": {
+        "name": "Washed Sand 0-4mm",
+        "price": "$38/ton",
+        "description": "Clean sand for concrete and plasters. 0-4mm grain size, no impurities."
+      },
+      "gravel": {
+        "name": "Gravel 4-16mm",
+        "price": "$36/ton",
+        "description": "Gravel for concrete and drainage. Uniform 4-16mm grain size."
+      },
+      "crushedStone": {
+        "name": "Crushed Stone 16-31.5mm",
+        "price": "$35/ton",
+        "description": "Crushed stone for foundations and roads. 16-31.5mm grain size."
+      },
+      "riverSand": {
+        "name": "River Sand 0-2mm",
+        "price": "$40/ton",
+        "description": "Fine river sand for finishes. Very fine 0-2mm grain size."
+      }
     }
   },
   "footer": {

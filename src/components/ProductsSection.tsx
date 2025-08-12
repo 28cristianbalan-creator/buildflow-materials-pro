@@ -44,10 +44,10 @@ const ProductsSection = () => {
                     <article key={p.id} className="bg-card rounded-lg shadow-soft hover:shadow-medium transition-all overflow-hidden animate-slide-up" style={{ animationDelay: `${(idx + i) * 0.05}s` }}>
                       <div className="p-6">
                         <div className="flex items-start justify-between mb-3">
-                          <h3 className="text-xl font-semibold text-card-foreground">{p.name}</h3>
+                          <h3 className="text-xl font-semibold text-card-foreground">{t(p.translationKey + '.name')}</h3>
                           <Badge variant={s.tone}>{s.label}</Badge>
                         </div>
-                        <p className="text-muted-foreground mb-4">{p.price}</p>
+                        <p className="text-muted-foreground mb-4">{t(p.priceKey)}</p>
                         <Button variant="professional" className="w-full hover-scale">{t('productsSection.viewDetails')}</Button>
                       </div>
                     </article>

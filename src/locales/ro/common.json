@@ -69,16 +69,100 @@
     "heading": "De ce să alegi BuildFlow?",
     "text": "Servim industria construcțiilor cu excelență, livrând materiale de calitate și servicii excepționale.",
     "stats": {
-      "years": "Ani de experiență",
-      "projects": "Proiecte livrate",
-      "quality": "Rată de calitate",
-      "clients": "Clienți fericiți"
+      "years": {
+        "value": "15+",
+        "label": "Ani de experiență",
+        "description": "Furnizor de încredere de materiale de construcții"
+      },
+      "projects": {
+        "value": "5000+",
+        "label": "Proiecte livrate",
+        "description": "Finalizări de proiecte reușite"
+      },
+      "quality": {
+        "value": "99%",
+        "label": "Rată de calitate",
+        "description": "Satisfacția clientului garantată"
+      },
+      "clients": {
+        "value": "1200+",
+        "label": "Clienți fericiți",
+        "description": "Construim relații durabile"
+      }
     },
     "cta": {
       "title": "Pregătit să începi proiectul?",
       "text": "Primește consultanță și materiale premium pentru nevoile tale. Echipa noastră este gata să te ajute.",
       "freeQuote": "Cere ofertă gratuită",
-      "callNow": "Sună acum: {{phone}}"
+      "callNow": "Sună acum"
+    }
+  },
+  "products": {
+    "clayBricks": {
+      "redBrick240": {
+        "name": "Cărămidă Roșie 240x115x63",
+        "price": "2,40 lei/bucată",
+        "description": "Cărămidă roșie standard pentru construcții, dimensiuni 240x115x63mm. Rezistentă la intemperii și durabilă."
+      },
+      "solidBrick": {
+        "name": "Cărămidă Roșie Plină",
+        "price": "2,60 lei/bucată", 
+        "description": "Cărămidă roșie plină pentru construcții masive. Rezistență superioară și durabilitate excepțională."
+      },
+      "perforatedBrick": {
+        "name": "Cărămidă Perforată",
+        "price": "2,25 lei/bucată",
+        "description": "Cărămidă cu găuri pentru izolația termică. Ușoară și eficientă energetic."
+      },
+      "fireBrick": {
+        "name": "Cărămidă Refractară",
+        "price": "2,75 lei/bucată",
+        "description": "Cărămidă specială pentru șeminee și cuptoare. Rezistentă la temperaturi înalte."
+      }
+    },
+    "bcaBlocks": {
+      "block200": {
+        "name": "Bloc BCA 600x250x200",
+        "price": "66 lei/m²",
+        "description": "Bloc din beton celular autoclavizat, grosime 200mm. Izolație termică excelentă."
+      },
+      "block150": {
+        "name": "Bloc BCA 600x250x150", 
+        "price": "64 lei/m²",
+        "description": "Bloc BCA pentru pereți interiori, grosime 150mm. Ușor de prelucrat."
+      },
+      "adhesive": {
+        "name": "Adeziv BCA 25kg",
+        "price": "37,50 lei/sac",
+        "description": "Adeziv special pentru blocuri BCA. Aplicare ușoară și aderență puternică."
+      },
+      "block100": {
+        "name": "Bloc BCA 600x250x100",
+        "price": "57,50 lei/m²", 
+        "description": "Bloc subțire BCA pentru compartimentări. Greutate redusă."
+      }
+    },
+    "aggregates": {
+      "washedSand": {
+        "name": "Nisip Spălat 0-4mm",
+        "price": "190 lei/tonă",
+        "description": "Nisip curat pentru beton și tencuieli. Granulație 0-4mm, fără impurități."
+      },
+      "gravel": {
+        "name": "Pietriș 4-16mm",
+        "price": "180 lei/tonă",
+        "description": "Pietriș pentru beton și drenaj. Granulație uniformă 4-16mm."
+      },
+      "crushedStone": {
+        "name": "Piatră Spartă 16-31.5mm",
+        "price": "175 lei/tonă",
+        "description": "Piatră spartă pentru fundații și șosele. Granulație 16-31.5mm."
+      },
+      "riverSand": {
+        "name": "Nisip de Râu 0-2mm",
+        "price": "200 lei/tonă",
+        "description": "Nisip fin de râu pentru finisaje. Granulație foarte fină 0-2mm."
+      }
     }
   },
   "footer": {
