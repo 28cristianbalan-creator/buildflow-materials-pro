@@ -88,7 +88,35 @@
         "value": "1200+",
         "label": "Clienți fericiți",
         "description": "Construim relații durabile"
-      }
+  },
+  "footer": {
+    "description": "Furnizăm materiale de construcție de înaltă calitate pentru toate nevoile dumneavoastră de construcție. De la cărămizi și blocuri până la agregate și nisip, avem tot ce aveți nevoie.",
+    "quickLinks": "Link-uri Rapide",
+    "products": "Produse",
+    "services": "Servicii",
+    "contact": "Contact",
+    "socialMedia": "Urmăriți-ne",
+    "address": "Adresă",
+    "phone": "Telefon",
+    "email": "Email",
+    "businessHours": "Program de Lucru",
+    "mondayFriday": "Luni-Vineri: 07:00 - 18:00",
+    "saturday": "Sâmbătă: 08:00 - 16:00",
+    "sunday": "Duminică: Închis",
+    "copyright": "© 2024 BuildFlow. Toate drepturile rezervate.",
+    "links": {
+      "clayBricks": "Cărămizi din Lut",
+      "bcaBlocks": "Blocuri BCA",
+      "aggregates": "Agregate",
+      "concreteBlocks": "Blocuri de Beton",
+      "buildingSand": "Nisip de Construcție",
+      "materialSupply": "Furnizare Materiale",
+      "bulkOrders": "Comenzi în Vrac",
+      "siteDelivery": "Livrare pe Șantier",
+      "projectConsultation": "Consultanță Proiecte",
+      "qualityTesting": "Testare Calitate"
+    }
+  }
     },
     "cta": {
       "title": "Pregătit să începi proiectul?",

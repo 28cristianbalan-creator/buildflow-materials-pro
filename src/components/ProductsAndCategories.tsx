@@ -50,11 +50,11 @@ const ProductsAndCategories = () => {
     <section id="products" className="py-20 bg-gradient-section" aria-labelledby="products-heading">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 id="products-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+        <div className="text-center mb-12 lg:mb-16 animate-fade-in">
+          <h2 id="products-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 lg:mb-6 leading-tight">
             {t('categories.heading')}
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t('categories.subheading')}
           </p>
         </div>
@@ -93,11 +93,11 @@ const ProductsAndCategories = () => {
                   </div>
                   
                   {/* Category Info */}
-                  <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-card-foreground mb-6 leading-tight">
+                  <div className="p-4 sm:p-6 lg:p-8 xl:p-12 flex flex-col justify-center">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-card-foreground mb-4 lg:mb-6 leading-tight">
                       {selectedCategoryData.label}
                     </h3>
-                    <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
+                    <p className="text-sm sm:text-base lg:text-lg text-muted-foreground mb-6 lg:mb-8 leading-relaxed">
                       {selectedCategoryData.description}
                     </p>
                     
@@ -131,9 +131,9 @@ const ProductsAndCategories = () => {
 
           {/* Products Grid */}
           <TabsContent value={selectedCategory} className="mt-0">
-            <div className="mb-8">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4 flex items-center gap-3">
-                <Package className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+            <div className="mb-6 lg:mb-8">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-foreground mb-3 lg:mb-4 flex items-center gap-2 lg:gap-3">
+                <Package className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-primary" />
                 Produse Disponibile - {selectedCategoryData?.label}
               </h3>
             </div>

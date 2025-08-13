@@ -88,7 +88,35 @@
         "value": "1200+",
         "label": "Happy Clients",
         "description": "Building lasting relationships"
-      }
+  },
+  "footer": {
+    "description": "We provide high-quality construction materials for all your building needs. From bricks and blocks to aggregates and sand, we have everything you need.",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact",
+    "socialMedia": "Follow Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "businessHours": "Business Hours",
+    "mondayFriday": "Mon-Fri: 07:00 AM - 06:00 PM",
+    "saturday": "Sat: 08:00 AM - 04:00 PM",
+    "sunday": "Sun: Closed",
+    "copyright": "© 2024 BuildFlow. All rights reserved.",
+    "links": {
+      "clayBricks": "Clay Bricks",
+      "bcaBlocks": "BCA Blocks",
+      "aggregates": "Aggregates",
+      "concreteBlocks": "Concrete Blocks",
+      "buildingSand": "Building Sand",
+      "materialSupply": "Material Supply",
+      "bulkOrders": "Bulk Orders",
+      "siteDelivery": "Site Delivery",
+      "projectConsultation": "Project Consultation",
+      "qualityTesting": "Quality Testing"
+    }
+  }
     },
     "cta": {
       "title": "Ready to Start Your Project?",
