@@ -51,10 +51,10 @@ const ProductsAndCategories = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 id="products-heading" className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 id="products-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
             {t('categories.heading')}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {t('categories.subheading')}
           </p>
         </div>
@@ -62,12 +62,12 @@ const ProductsAndCategories = () => {
         <Tabs value={selectedCategory} onValueChange={(value) => setSelectedCategory(value as any)} className="w-full">
           {/* Category Tabs */}
           <div className="flex justify-center mb-12">
-            <TabsList className="flex flex-wrap gap-2 justify-center bg-card/50 backdrop-blur-sm p-2 rounded-xl">
+            <TabsList className="flex flex-wrap gap-2 justify-center bg-card/70 backdrop-blur-lg p-3 rounded-2xl shadow-medium border border-border/20">
               {categoryTabs.map((cat) => (
                 <TabsTrigger 
                   key={cat.key} 
                   value={cat.key} 
-                  className="capitalize text-lg px-6 py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all duration-300"
+                  className="capitalize text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-soft transition-all duration-300 font-medium hover:bg-accent/50"
                 >
                   {cat.label}
                 </TabsTrigger>
@@ -93,11 +93,11 @@ const ProductsAndCategories = () => {
                   </div>
                   
                   {/* Category Info */}
-                  <div className="p-8 lg:p-12 flex flex-col justify-center">
-                    <h3 className="text-3xl lg:text-4xl font-bold text-card-foreground mb-6">
+                  <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-card-foreground mb-6 leading-tight">
                       {selectedCategoryData.label}
                     </h3>
-                    <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                    <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
                       {selectedCategoryData.description}
                     </p>
                     
@@ -132,8 +132,8 @@ const ProductsAndCategories = () => {
           {/* Products Grid */}
           <TabsContent value={selectedCategory} className="mt-0">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
-                <Package className="w-6 h-6 text-primary" />
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground mb-4 flex items-center gap-3">
+                <Package className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Produse Disponibile - {selectedCategoryData?.label}
               </h3>
             </div>
@@ -167,28 +167,28 @@ const ProductsAndCategories = () => {
                       </div>
                     </div>
                     
-                    <div className="p-6">
+                    <div className="p-4 sm:p-6">
                       <div className="mb-4">
-                        <h4 className="text-lg font-semibold text-card-foreground mb-2 group-hover:text-primary transition-colors">
+                        <h4 className="text-base sm:text-lg font-semibold text-card-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
                           {t(product.translationKey + '.name')}
                         </h4>
-                        <p className="text-xl font-bold text-primary">{t(product.priceKey)}</p>
+                        <p className="text-lg sm:text-xl font-bold text-primary">{t(product.priceKey)}</p>
                         {product.description && (
-                          <p className="text-sm text-muted-foreground mt-2 line-clamp-2">
+                          <p className="text-xs sm:text-sm text-muted-foreground mt-2 line-clamp-2 leading-relaxed">
                             {t(product.description)}
                           </p>
                         )}
                       </div>
                       
                       {product.stock > 0 && (
-                        <p className="text-sm text-muted-foreground mb-4">
+                        <p className="text-xs sm:text-sm text-muted-foreground mb-4">
                           În stoc: <span className="font-medium">{product.stock} bucăți</span>
                         </p>
                       )}
                       
                       <Button 
                         variant="professional" 
-                        className="w-full group-hover:scale-105 transition-transform duration-300"
+                        className="w-full group-hover:scale-105 transition-transform duration-300 text-sm sm:text-base font-medium"
                         disabled={product.stock === 0}
                       >
                         {product.stock === 0 ? 'Indisponibil' : t('productsSection.viewDetails')}
