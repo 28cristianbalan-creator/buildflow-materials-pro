@@ -221,5 +221,18 @@
       "sat": "Sâm: 8:00 - 16:00"
     },
     "copyright": "© 2024 BuildFlow. Toate drepturile rezervate. Construim cu calitate și precizie."
+  },
+  "megaMenu": {
+    "categories": "Categorii",
+    "featuredProducts": "Produse Recomandate",
+    "viewAll": "Vezi Toate",
+    "allCategories": "Toate Categoriile",
+    "allProducts": "Toate Produsele",
+    "totalProducts": "{{count}} produse în total",
+    "promo": {
+      "title": "Materiale de Calitate",
+      "description": "Materiale de construcții de nivel profesional cu livrare națională și suport expert.",
+      "cta": "Cere Ofertă"
+    }
   }
 }

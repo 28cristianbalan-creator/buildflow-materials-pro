@@ -221,5 +221,18 @@
       "sat": "Sat: 8:00 AM - 4:00 PM"
     },
     "copyright": "© 2024 BuildFlow. All rights reserved. Building with quality and precision."
+  },
+  "megaMenu": {
+    "categories": "Categories",
+    "featuredProducts": "Featured Products",
+    "viewAll": "View All",
+    "allCategories": "All Categories",
+    "allProducts": "All Products",
+    "totalProducts": "{{count}} total products",
+    "promo": {
+      "title": "Quality Materials",
+      "description": "Professional-grade construction materials with nationwide delivery and expert support.",
+      "cta": "Get Quote"
+    }
   }
 }

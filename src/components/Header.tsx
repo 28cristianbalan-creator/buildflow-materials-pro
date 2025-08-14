@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import MegaMenu from "@/components/MegaMenu";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 
@@ -41,9 +42,11 @@ const Header = () => {
             <a href="#home" className={`story-link font-medium transition-colors duration-300 ${
               scrolled ? 'text-foreground' : 'text-primary-foreground drop-shadow-md'
             } hover:text-primary`}>{t('header.nav.home')}</a>
-            <a href="#products" className={`story-link font-medium transition-colors duration-300 ${
+            <div className={`transition-colors duration-300 ${
               scrolled ? 'text-foreground' : 'text-primary-foreground drop-shadow-md'
-            } hover:text-primary`}>{t('header.nav.products')}</a>
+            }`}>
+              <MegaMenu />
+            </div>
             <a href="#about" className={`story-link font-medium transition-colors duration-300 ${
               scrolled ? 'text-foreground' : 'text-primary-foreground drop-shadow-md'
             } hover:text-primary`}>{t('header.nav.about')}</a>
