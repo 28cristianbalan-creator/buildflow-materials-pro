@@ -58,6 +58,8 @@
   },
   "productsSection": {
     "heading": "Товары",
+    "popular": "Популярные",
+    "new": "Новинка",
     "stock": {
       "in": "В наличии",
       "low": "Мало",

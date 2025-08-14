@@ -58,6 +58,8 @@
   },
   "productsSection": {
     "heading": "Products",
+    "popular": "Popular",
+    "new": "New",
     "stock": {
       "in": "In Stock",
       "low": "Low Stock",

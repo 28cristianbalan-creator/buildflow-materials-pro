@@ -58,6 +58,8 @@
   },
   "productsSection": {
     "heading": "Produse",
+    "popular": "Populare",
+    "new": "Nou",
     "stock": {
       "in": "În stoc",
       "low": "Stoc limitat",

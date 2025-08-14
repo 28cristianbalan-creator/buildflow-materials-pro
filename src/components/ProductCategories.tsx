@@ -1,106 +1,53 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { useTranslation } from 'react-i18next';
+import { categories } from '@/data/categories';
+import { ChevronRight } from 'lucide-react';
 import redBricksImage from "@/assets/red-bricks.jpg";
 import bcaBlocksImage from "@/assets/bca-blocks.jpg";
 import aggregatesImage from "@/assets/aggregates.jpg";
 
 const ProductCategories = () => {
-  const categories = [
-    {
-      id: 1,
-      title: "Clay Bricks",
-      description: "Premium quality red clay bricks for all construction needs. Durable, weather-resistant, and available in various sizes.",
-      image: redBricksImage,
-      features: ["High Strength", "Weather Resistant", "Standard Sizes"],
-      price: "From $0.45/brick"
-    },
-    {
-      id: 2,
-      title: "BCA Blocks",
-      description: "Lightweight autoclaved aerated concrete blocks. Energy efficient, easy to work with, excellent insulation properties.",
-      image: bcaBlocksImage,
-      features: ["Lightweight", "Thermal Insulation", "Easy Installation"],
-      price: "From $12.50/m²"
-    },
-    {
-      id: 3,
-      title: "Aggregates",
-      description: "High-grade construction aggregates including sand, gravel, and crushed stone. Perfect for concrete and foundation work.",
-      image: aggregatesImage,
-      features: ["Various Grades", "Clean & Tested", "Bulk Available"],
-      price: "From $35/ton"
-    }
-  ];
+  const { t } = useTranslation();
+
+  const categoryImages = {
+    'red-bricks': redBricksImage,
+    'bca-blocks': bcaBlocksImage,
+    'aggregates': aggregatesImage
+  };
 
   return (
-    <section id="products" className="py-20 bg-gradient-section">
+    <section className="py-6 lg:py-8 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Product Range
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Premium construction materials sourced from trusted manufacturers, 
-            delivered with excellence and reliability.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Categories Grid - Horizontal Layout like screenshot */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
           {categories.map((category, index) => (
-            <div 
-              key={category.id}
-              className="group bg-card rounded-lg shadow-soft hover:shadow-medium transition-all duration-500 overflow-hidden animate-slide-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
+            <div
+              key={category.key}
+              className="group relative bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-border/30 hover:border-primary/20"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={category.image} 
-                  alt={category.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                  {category.price}
-                </div>
+              {/* Arrow Icon - positioned like in screenshot */}
+              <div className="absolute top-2 right-2 z-10 bg-primary text-primary-foreground p-1 rounded-sm opacity-90 group-hover:opacity-100 transition-opacity">
+                <ChevronRight className="w-3 h-3" />
               </div>
-              
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-card-foreground mb-3">
-                  {category.title}
+
+              {/* Category Image */}
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <img
+                  src={categoryImages[category.imageKey as keyof typeof categoryImages]}
+                  alt={t(`${category.translationKey}.alt`)}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              </div>
+
+              {/* Category Label - positioned at bottom with dark overlay like screenshot */}
+              <div className="absolute bottom-0 left-0 right-0 p-2 lg:p-3">
+                <h3 className="text-xs lg:text-sm font-semibold text-white leading-tight line-clamp-2">
+                  {t(`${category.translationKey}.title`)}
                 </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {category.description}
-                </p>
-                
-                <div className="mb-6">
-                  <div className="flex flex-wrap gap-2">
-                    {category.features.map((feature, idx) => (
-                      <span 
-                        key={idx}
-                        className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                
-                <Button 
-                  variant="professional" 
-                  className="w-full group-hover:scale-105 transition-transform duration-300"
-                >
-                  View Details
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12 animate-fade-in">
-          <Button variant="hero" size="lg">
-            View All Products
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
         </div>
       </div>
     </section>
