@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import MegaMenu from "@/components/MegaMenu";
+import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 
@@ -28,14 +29,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-medium">
-              <div className="w-5 h-5 bg-primary-foreground rounded-sm" />
-            </div>
-            <span className={`text-xl lg:text-2xl font-bold transition-colors duration-300 ${
-              scrolled ? 'text-foreground' : 'text-primary-foreground drop-shadow-lg'
-            }`}>BuildFlow</span>
-          </a>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
