@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import Logo from "@/components/Logo";
+import Logo from "@/components/Logo"; // ✅ same as header
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="animate-fade-in">
             <div className="mb-6">
-              <Logo className="brightness-0 invert" />
+              <Logo className="brightness-0 invert" /> {/* ✅ shared logo */}
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Your trusted partner for premium construction materials. 
