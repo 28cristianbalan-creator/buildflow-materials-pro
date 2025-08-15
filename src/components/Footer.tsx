@@ -1,5 +1,4 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import Logo from "./Logo";
 
 const Footer = () => {
   return (
@@ -8,8 +7,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="animate-fade-in">
-            <div className="mb-6">
-              <Logo className="brightness-0 invert" />
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
+                <div className="w-4 h-4 bg-white rounded-sm"></div>
+              </div>
+              <span className="text-xl font-bold">BuildFlow</span>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Your trusted partner for premium construction materials. 

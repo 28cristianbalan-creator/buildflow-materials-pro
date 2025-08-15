@@ -26,13 +26,13 @@ const Header = () => {
           : 'bg-background/30 backdrop-blur-sm'
       }`}
     >
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="flex items-center justify-between h-18 lg:h-22">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Logo />
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <a href="#home" className={`story-link font-medium transition-colors duration-300 ${
               scrolled ? 'text-foreground' : 'text-primary-foreground drop-shadow-md'
             } hover:text-primary`}>{t('header.nav.home')}</a>
@@ -50,7 +50,7 @@ const Header = () => {
           </nav>
 
           {/* Contact Info, Language & CTA */}
-          <div className="hidden xl:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <div className={`flex items-center gap-2 text-sm transition-colors duration-300 ${
               scrolled ? 'text-muted-foreground' : 'text-primary-foreground/90 drop-shadow-md'
             }`}>
@@ -63,14 +63,9 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Language switcher for tablets */}
-          <div className="hidden md:block lg:hidden">
-            <LanguageSwitcher />
-          </div>
-
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 rounded-lg transition-all duration-300 ${
+            className={`md:hidden p-2 rounded-lg transition-all duration-300 ${
               scrolled 
                 ? 'text-foreground hover:bg-accent' 
                 : 'text-primary-foreground hover:bg-primary-foreground/20 drop-shadow-lg'
@@ -84,7 +79,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className={`lg:hidden py-6 border-t transition-all duration-300 animate-fade-in ${
+          <div className={`md:hidden py-6 border-t transition-all duration-300 animate-fade-in ${
             scrolled ? 'border-border bg-background/95' : 'border-primary-foreground/20 bg-background/95'
           }`}>
             <nav className="flex flex-col space-y-4">

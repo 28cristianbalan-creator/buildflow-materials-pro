@@ -19,7 +19,7 @@ const Logo = ({ className = "" }: LogoProps) => {
       <img 
         src={scrolled ? "/logos/buildflow-logo-dark.png" : "/logos/buildflow-logo-light.png"} 
         alt="BuildFlow Logo" 
-        className="h-12 lg:h-14 w-auto transition-all duration-300"
+        className="h-10 w-auto transition-all duration-300"
       />
     </a>
   );
