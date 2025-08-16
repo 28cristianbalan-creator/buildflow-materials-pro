@@ -18,8 +18,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Construction orange for trust and action */
-    --primary: 22 88% 55%;
+    /* Industrial steel blue for professional look */
+    --primary: 214 84% 56%;
     --primary-foreground: 0 0% 100%;
 
     /* Professional grays */
@@ -39,13 +39,13 @@ All colors MUST be HSL.
     --input: 215 15% 94%;
     --ring: 22 88% 55%;
 
-    /* Construction-inspired variables */
-    --construction-slate: 215 25% 25%;
-    --construction-concrete: 215 8% 85%;
-    --construction-steel: 215 15% 65%;
+    /* Industrial construction colors */
+    --construction-slate: 215 25% 15%;
+    --construction-concrete: 215 8% 70%;
+    --construction-steel: 215 20% 45%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 15%) 0%, hsl(215 20% 25%) 100%);
+    /* Industrial gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 25% 15% / 0.95) 0%, hsl(215 20% 25% / 0.9) 100%);
     --gradient-section: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(215 15% 97%) 100%);
     
     /* Shadows */
